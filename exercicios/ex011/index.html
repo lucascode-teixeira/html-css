@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <title>Midies em HTML5</title>
+</head>
+
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir este site em diferentes dispositivos e navegadores para ver a imagem mudar de tamanho
+        automaticamente.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexível">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio preload="metadata" autoplay controls loop src="midia/@LadyGaga- Happy Mistake (Jimmy Kimmel Live!).mp4">
+        <source src="midia/@LadyGaga- Happy Mistake (Jimmy Kimmel Live!).mp4" type="audio/mp4">
+        <p>Infelizmente seu navegador não consegue reproduzir o áudio. <a href="midia/@LadyGaga- Happy Mistake (Jimmy Kimmel Live!).mp4">Clique aqui para baixar o áudio mp4</a></p>
+    </audio>
+</body>
+
+</html>

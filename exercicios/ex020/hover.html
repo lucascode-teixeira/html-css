@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body {
+            font: normal 1em Arial, Helvetica, sans-serif;
+        }
+
+        #d1 {
+            width: 145px;
+        }
+
+        #d1:hover {
+            color: red;
+        }
+
+        #d1>p {
+            display: none;
+        }
+
+        #d1:hover>p {
+            display: block;
+            background-color: rgba(255, 115, 0, 0.795);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Conteúdo especial</h1>
+    <div id="d1">
+        Passe o mouse aqui
+        <p>SURPRESAAAA! </p>
+    </div>
+    <p>Veja o conteúdo oculto aparecendo</p>
+
+</body>
+
+</html>

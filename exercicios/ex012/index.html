@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <title>Vídeos com HTML5</title>
+</head>
+
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <h2>Este vídeo está hospedado localmente no computador.</h2>
+    <video controls loop poster="imagens/nature.jpg" width="500" height="280">
+        <source src="midia/Meu Video.webm" type="Video/webm">
+        <source src="midia/Meu Video.mkv" type="Video/mkv">
+        <source src="midia/Meu Video.mp4" type="Video/mp4">
+        <source src="midia/Meu Video.ogv" type="Video/ogv">
+        <p>Seu navegador não suporta vídeos HTML5.</p>
+    </video>
+    <h2>Este vídeo está hospedado no YouTube.</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/i7L19SOqbNM?si=2FF6pWEUglQ9JXqs"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+
+</html>

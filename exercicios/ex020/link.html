@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* Seletores Personalizados
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  = clildren
+        */
+
+        body {
+            font: normal 1em Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            font-weight: bold;
+            text-decoration: none;
+            color: red;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: rgb(70, 42, 42);
+        }
+
+        a:active {
+            color: blue;
+        }
+
+        .especial:hover {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.616);
+            text-decoration: none;
+        }
+
+        .especial::before {
+            content: ' >>';
+            text-decoration: none;
+            font-weight: normal;
+        }
+
+        .especial::after {
+            content: ' <<';
+            text-decoration: none;
+            font-weight: normal;
+        }
+
+        .caixa-teste {
+            background-color: rgba(255, 0, 0, 0.322);
+            width: 480px;
+            padding: 5px;
+            margin: 0 auto;
+            border-radius: 10px;
+            outline-color: aqua;
+        }
+
+        .caixa-teste__titulo-principal {
+            background-color: blue;
+        }
+
+        .caixa-teste__titulo-secundario {
+            background-color: aqua;
+        }
+
+        .borda-teste {
+            background-color: blue;
+            width: 480px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Personalisando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li>
+        <li><a class="especial" href="https://youtube.com/cursoemvideo" target="_blank">Canal do YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank">Site do CursoemVideo</a></li>
+    </ul>
+    <h1>Testando atributos Target</h1>
+    <h2>como os Links se Comportam</h2>
+    <p>Clique nos links abaixo para você ver a diferença de comportamento do seu navegador</p>
+
+    <h3>1. O padrão (__self)</h3>
+    <p>
+        <a href="https://pt.wikipedia.org" target="_self">Abrir Wikipedia aqui mesmo (_self)</a>
+    </p>
+
+    <h3>2. Nova aba ou janela (_blank)</h3>
+    <p>
+        <a href="https://pt.wikipedia.org" target="_blank" rel="noopener noreferrer">
+            Abrir Wikipedia em nova aba (_blank seguro)
+        </a>
+    </p>
+
+    <h3>3 e 4. Contexto de Iframes (_parent e _top)</h3>
+    <p><em>Nota: Estes só mostram diferença real se esta página estiver embutida dentro de um &lt;iframe&gt; em outro
+            site. Se não houver iframe, eles agirão como o _self.</em></p>
+    <ul>
+        <li>
+            <a href="https://pt.wikipedia.org" target="_parent">Abrir no contexto Pai (_parent)</a>
+        </li>
+        <li>
+            <a href="https://pt.wikipedia.org" target="_top">Abrir no nível mais alto (_top)</a>
+        </li>
+    </ul>
+
+    <div class="caixa-teste">
+        <h1 class="caixa-teste__titulo-principal">Teste de box</h1>
+        <h2 class="caixa-teste__titulo-secundario">Testando o padding externo do elemento</h2>
+    </div>
+    <div class="borda-teste">
+        <h1 class="borda-teste__titulo-borda">Teste de borda</h1>
+    </div>
+</body>
+
+</html>

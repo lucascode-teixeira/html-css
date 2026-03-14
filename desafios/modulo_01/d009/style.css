@@ -1,0 +1,46 @@
+body {
+    font: normal 1em Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #AA6C39, #AA8439, #AA3939, #AA6C39);
+    color: #241306;
+}
+
+main {
+    width: 600px;
+    margin: auto;
+   text-align: center;
+}
+
+/*Outras formas de centralizar conteudo*/
+
+/*
+main a {
+    display: block;
+    margin: 0 auto;
+}
+*/
+/*
+img {
+    display: block;    --   passa a ser um “bloco” 
+    margin: 0 auto;    --   centraliza horizontalmente 
+    max-width: 100%;   --   opcional: mantém dentro dos 600px 
+}
+*/
+h1 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #241306;
+}
+
+a:hover {
+    color: darkred;
+    text-decoration: underline;
+}
+
+.btn-voltar {
+    display: block;
+    margin: auto;
+    
+}

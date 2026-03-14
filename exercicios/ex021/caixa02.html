@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font: 1em Arial, Helvetica, sans-serif;
+            background-color: rgba(167, 164, 161, 0.719);
+            margin: 0;
+        }
+
+        header {
+            background-color: rgba(167, 164, 161, 0.719);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 3px;
+        }
+
+        nav {
+            background-color: rgba(87, 76, 76, 0.301);
+            padding: 3px;
+            border-radius: 3px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.281);
+            /*
+            No box-shadow, a sequencia de valores é, deslocamento horizontal, deslocamento vertical, espalhamento e sombra
+            */
+
+            /*
+        nav {
+            box-shadow: 5px (X offset) 3px (Y offset) 7px (blur) 1px (Spread) black (Cor);
+        }
+            */
+        }
+
+        nav>a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.582);
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav>a:hover {
+            text-decoration: underline;
+            color: darkred;
+        }
+
+        main {
+            background-color: rgba(255, 255, 255, 0.329);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.281);
+        }
+
+        article {
+            background-color: rgba(167, 164, 161, 0.719);
+            padding: 5px;
+            border-radius: 3px;
+        }
+
+        article>aside {
+            background-color: rgba(87, 76, 76, 0.301);
+            /*
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            */
+            border-radius: 3px;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.527);
+            text-align: center;
+            margin: 0px;
+            padding: 10px;
+            border-radius: 3px;
+        }
+
+        footer>p {
+            margin: 0px;
+        }
+
+        #bola {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 50px auto;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nobis est quasi commodi repudiandae.
+                    Ratione accusamus sit aliquam velit magni excepturi blanditiis quo exercitationem similique,
+                    consequatur tempora voluptates, aspernatur dolore!</p>
+                <aside>
+                    <p>Artigo escrito por Luacs Teixeira</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Lucas Teixeira</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+
+</html>

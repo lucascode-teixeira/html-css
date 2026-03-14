@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <title>Outras Formatações</title>
+    <style>
+        code {
+            font-family: Consolas, monospace;
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+
+        /* OPÇÃO 1: Usar margin para espaço externo */
+        .code-margin {
+            margin-left: 20px;
+            /* Move para direita */
+            margin-top: 10px;
+            /* Move para baixo */
+        }
+
+        /* OPÇÃO 2: Usar transform para mover visualmente */
+        .code-transform {
+            transform: translate(30px, 15px);
+            /* x, y */
+            display: inline-block;
+            /* Necessário para transform funcionar bem */
+        }
+
+        /* OPÇÃO 3: Usar position relative */
+        .code-position {
+            position: relative;
+            left: 20px;
+            /* Move para direita */
+            top: 10px;
+            /* Move para baixo */
+        }
+
+        /* OPÇÃO 4: Usar text-indent (para indentação) */
+        .code-indent {
+            text-indent: 20px;
+            /* Indenta a primeira linha */
+        }
+
+        /* OPÇÃO 5: Usar padding interno */
+        .code-padding {
+            padding-left: 30px;
+            /* Afasta o conteúdo da esquerda */
+            padding-top: 15px;
+            /* Afasta de cima */
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte</h2>
+    <p>O comando <code>document.getElementById('test')</code> é inscrito em linguagem JavaScript</p>
+
+    <h3>Exemplos de movimento com CSS:</h3>
+
+    <h4>1. Usando MARGIN (espaço externo):</h4>
+    <pre>
+        <code class="code-margin">
+            num = int(input("Digite um número inteiro: "))
+            if num % 2 == 0:
+                print("O número é par.")
+        </code>
+    </pre>
+
+    <h4>2. Usando TRANSFORM (movimento visual):</h4>
+    <pre>
+        <code class="code-transform">
+            num = int(input("Digite um número inteiro: "))
+            if num % 2 == 0:
+                print("O número é par.")
+        </code>
+    </pre>
+
+    <h4>3. Usando POSITION RELATIVE:</h4>
+    <pre>
+        <code class="code-position">
+            num = int(input("Digite um número inteiro: "))
+            if num % 2 == 0:
+                print("O número é par.")
+        </code>
+    </pre>
+
+    <h4>4. Usando TEXT-INDENT (indentação):</h4>
+    <pre>
+        <code class="code-indent">
+            num = int(input("Digite um número inteiro: "))
+            if num % 2 == 0:
+                print("O número é par.")
+        </code>
+    </pre>
+
+    <h4>5. Usando PADDING (espaço interno):</h4>
+    <pre>
+        <code class="code-padding">
+            num = int(input("Digite um número inteiro: "))
+            if num % 2 == 0:
+                print("O número é par.")
+        </code>
+    </pre>
+    <h2>Citações</h2>
+    <p>Como disse o presidente: <q>Estamos em uma fase de transição</q></p>
+    <h2>Citações completas</h2>
+    <blockquote cite="https://www.example.com">
+        Esta é uma citação completa de um texto externo.
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Este texto está invertido</bdo></p>
+</body>
+
+</html>
