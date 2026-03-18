@@ -6,18 +6,31 @@
     <title>Document</title>
     <style>
         body {
+            margin: 0;
             background-image: url('imagens/espaco.jpg');
         }
 
-        main {
+        section#container {
+            position: relative;
+            height: 100vh;
+        }
+
+        article#conteudo {
+            position: absolute;
             background-image: url('imagens/astronauta.png');
-            background-repeat: no-repeat;
             height: 500px;
-            margin: auto;
+            width: 500px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 <body>
-    <main></main>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
 </body>
 </html>
