@@ -34,13 +34,28 @@
             background-color: rgb(114, 113, 113);
             color: rgba(240, 248, 255, 0.788);
         }
+
+        th.conhecimento {
+            background-color: lightgray;
+            color: black;
+        }
+
+        td.disciplinas {
+            text-align: left;
+        }
+
+        td.media {
+            background-color: rgb(114, 113, 113);
+            color: rgba(240, 248, 255, 0.788);
+
+        }
     </style>
 </head>
 
 <body>
     <table>
 
-        <caption>Tabela de Notas</caption>
+        <caption>Cadastro</caption>
         <thead>
             <tr>
                 <th rowspan="2">Área</th>
@@ -56,29 +71,29 @@
 
         <tbody>
             <tr>
-                <th rowspan="4">Exatas</th>
-                <td>Matemática</td>
+                <th class="conhecimento" rowspan="4"><strong>Exatas</strong></th>
+                <td class="disciplinas">Matemática</td>
                 <td>0.0</td>
                 <td>0.0</td>
                 <td>0.0</td>
             </tr>
 
             <tr>
-                <td>Física</td>
+                <td class="disciplinas">Física</td>
                 <td>0.0</td>
                 <td>0.0</td>
                 <td>0.0</td>
             </tr>
 
             <tr>
-                <td>Química</td>
+                <td class="disciplinas">Química</td>
                 <td>0.0</td>
                 <td>0.0</td>
                 <td>0.0</td>
             </tr>
 
             <tr>
-                <td>Biologia</td>
+                <td class="disciplinas">Biologia</td>
                 <td>0.0</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -86,19 +101,19 @@
 
             <tr>
                 <th colspan="4">Média de Exatas</th>
+                <td class="media">0.0</td>
+            </tr>
+
+            <tr>
+                <th class="conhecimento" rowspan="2"><strong>Humanas</strong></th>
+                <td class="disciplinas">"História</td>
+                <td>0.0</td>
+                <td>0.0</td>
                 <td>0.0</td>
             </tr>
 
             <tr>
-                <th rowspan="2">Humanas</th>
-                <td>História</td>
-                <td>0.0</td>
-                <td>0.0</td>
-                <td>0.0</td>
-            </tr>
-
-            <tr>
-                <td>Geografia</td>
+                <td class="disciplinas">Geografia</td>
                 <td>0.0</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -108,7 +123,7 @@
         <tfoot>
             <tr>
                 <th colspan="4">Média de Humanas</th>
-                <td>0.0</td>
+                <td class="media">0.0</td>
             </tr>
         </tfoot>
     </table>
